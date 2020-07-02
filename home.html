@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular Application</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap 101 Template</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+         
+         <link rel="stylesheet" type="text/css" href="css/angulars.css">
+        
+    
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        
+    <script src="index.js"></script> 
+   
+
+    <body ng-app="app1">
+                 
+        
+<div class="container" style="width:800px;" ng-controller="homeCtrl">
+    <div class="main">
+        <h1>Enter Your Details</h1>
+
+        <div class="additem"><br>
+        <form>
+        <b>Name</b>  <input type="text"  name="user" ng-model="addName"  placeholder="Enter your Name" class="addtext" required/><br><br>
+        <b>Email</b> <input  type="email" name="mail" ng-model="addEmail" placeholder="Enter your Email" class="addtext" required /><br><br>
+        <button type="submit" class="btn btn-primary" ng-click="pushItem()">Submit</button>
+        </form>
+        </div>
+
+        <ul>
+        <li> 
+            {{item1}}
+            </li>
+            <li>
+         {{item2}}
+        </li> 
+               
+            
+        </ul>
+    </div>
+    </div>
+
+   
+</body>
+</html>
+
